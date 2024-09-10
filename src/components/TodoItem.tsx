@@ -32,7 +32,7 @@ export const TodoItem: React.FC<TodoItemProps> = ({
         <Checkbox
           checked={todo.completed}
           onCheckedChange={onToggle}
-          className="w-5 h-5"
+          className="w-5 h-5 bg-input"
         />
         <label className="text-card-foreground">
           <span
