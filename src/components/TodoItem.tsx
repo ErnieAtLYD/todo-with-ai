@@ -17,7 +17,7 @@ export const TodoItem: React.FC<TodoItemProps> = ({
 }) => {
   const priorityColors = {
     low: "bg-green-100",
-    medium: "bg-yellow-100",
+    medium: "bg-card",
     high: "bg-orange-100",
     urgent: "bg-red-100",
   };
