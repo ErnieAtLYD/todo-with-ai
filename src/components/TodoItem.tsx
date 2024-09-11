@@ -45,9 +45,7 @@ export const TodoItem: React.FC<TodoItemProps> = ({
         </label>
       </div>
       <div className="flex items-center gap-2">
-        <Badge variant="secondary" className="px-2 py-1 text-xs">
-          High
-        </Badge>
+        <Badge variant="secondary" className="px-2 py-1 text-xs">{todo.priority}</Badge>
         <div className="text-sm text-muted-foreground">{todo.dueDate}</div>
         <Button
           variant="ghost"
