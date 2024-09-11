@@ -1,4 +1,4 @@
-# Project Title
+# todo-with-ai
 
 This project is a simple to-do list application built with Next.js and React. It is designed for users who want to manage their tasks efficiently with a clean and intuitive interface.
 
