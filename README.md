@@ -1,6 +1,23 @@
 # Project Title
 
-A brief description of what this project does and who it's for.
+This project is a simple to-do list application built with Next.js and React. It is designed for users who want to manage their tasks efficiently with a clean and intuitive interface.
+
+## Features
+
+- **Add Tasks**: Easily add new tasks to your to-do list.
+- **Display Tasks**: View all tasks with details such as priority and due date.
+- **Toggle Task Completion**: Mark tasks as completed or incomplete.
+- **Delete Tasks**: Remove tasks from your list.
+- **Clear Completed Tasks**: Quickly clear all completed tasks.
+- **Task Prioritization**: Assign priority levels to tasks (e.g., high, medium, urgent).
+- **Persistent Storage**: Tasks are saved in local storage to persist across sessions.
+
+## Technologies Used
+
+- **Next.js**: A React framework for building fast and user-friendly web applications.
+- **React**: A JavaScript library for building user interfaces.
+- **Tailwind CSS**: A utility-first CSS framework for styling.
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
 
 ## Installation
 
