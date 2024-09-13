@@ -22,7 +22,7 @@ import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Badge } from "@/components/ui/badge"
 
-export function Component() {
+export default function Component() {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-background">
       <div className="bg-card p-6 rounded-lg shadow-lg w-full max-w-3xl">
