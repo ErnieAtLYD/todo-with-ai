@@ -109,7 +109,7 @@ export function Component() {
   )
 }
 
-function FilePenIcon(props) {
+function FilePenIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -131,7 +131,7 @@ function FilePenIcon(props) {
 }
 
 
-function TrashIcon(props) {
+function TrashIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
