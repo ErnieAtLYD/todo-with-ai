@@ -17,16 +17,14 @@ export const useTodos = () => {
     localStorage.setItem('todos', JSON.stringify(todos))
   }, [todos])
 
+
+
   const addTodo = (text: string) => {
-    const newTodo: Todo = {
-      id: Date.now(),
-      text,
-      completed: false,
-      priority: 'medium',
-      dueDate: new Date().toLocaleDateString(),
-    }
-    setTodos([...todos, newTodo])
-  }
+    setTodos(prevTodos => [
+      ...prevTodos,
+      { id: Date.now(), text, completed: false, priority: 'medium', dueDate: '' }
+    ]);
+  };
 
   const toggleTodo = (id: number) => {
     setTodos(todos.map(todo =>
