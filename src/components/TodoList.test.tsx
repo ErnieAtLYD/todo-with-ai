@@ -9,7 +9,6 @@ jest.mock('@/hooks/useTodos');
 
 describe('TodoList Component', () => {
   const mockUseTodos = useTodos as jest.MockedFunction<typeof useTodos>;
-  const addTodo = jest.fn();
 
   beforeEach(() => {
     mockUseTodos.mockReturnValue({
@@ -28,14 +27,6 @@ describe('TodoList Component', () => {
   });
 
   it('adds a new task', () => {
-    const addTodo = jest.fn();
-    mockUseTodos.mockReturnValueOnce({
-      todos: [],
-      addTodo,
-      toggleTodo: jest.fn(),
-      deleteTodo: jest.fn(),
-      clearCompletedTodos: jest.fn(),
-    });
 
     render(<TodoList />);
     const inputElement = screen.getByPlaceholderText(/add a new task/i);
