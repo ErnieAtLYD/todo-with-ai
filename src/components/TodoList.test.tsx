@@ -9,11 +9,12 @@ jest.mock('@/hooks/useTodos');
 
 describe('TodoList Component', () => {
   const mockUseTodos = useTodos as jest.MockedFunction<typeof useTodos>;
+  const addTodo = jest.fn();
 
   beforeEach(() => {
     mockUseTodos.mockReturnValue({
       todos: [],
-      addTodo: jest.fn(),
+      addTodo,
       toggleTodo: jest.fn(),
       deleteTodo: jest.fn(),
       clearCompletedTodos: jest.fn(),
