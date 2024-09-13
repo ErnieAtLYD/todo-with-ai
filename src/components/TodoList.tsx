@@ -31,7 +31,7 @@ export const TodoList = () => {
           className="w-full px-4 py-2 rounded-md border border-input focus:outline-none focus:ring-1 focus:ring-primary"
         />
         <Button onClick={handleAddTodo} className="ml-4 px-4 py-2 rounded-md text-primary-foreground">
-          Add Task
+          Add task
         </Button>
       </div>
       <div className="space-y-2">
