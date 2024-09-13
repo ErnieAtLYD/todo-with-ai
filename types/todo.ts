@@ -3,5 +3,5 @@ export interface Todo {
     text: string
     completed: boolean
     priority: 'low' | 'medium' | 'high' | 'urgent'
-    dueDate: string
+    dueDate: string | null
   }
