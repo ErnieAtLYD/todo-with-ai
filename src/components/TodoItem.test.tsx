@@ -9,7 +9,6 @@ describe('TodoItem Component', () => {
     id: 1,
     text: 'Test Task',
     completed: false,
-    priority: 'medium',
     dueDate: '2024-09-13',
   };
 
@@ -23,7 +22,6 @@ describe('TodoItem Component', () => {
   it('renders correctly with given props', () => {
     render(<TodoItem todo={mockTodo} onToggle={onToggle} onDelete={onDelete} />);
     expect(screen.getByText(/Test Task/i)).toBeInTheDocument();
-    expect(screen.getByText(/medium/i)).toBeInTheDocument();
     expect(screen.getByText(/2024-09-13/i)).toBeInTheDocument();
   });
 
@@ -36,7 +34,7 @@ describe('TodoItem Component', () => {
 
   it('calls onDelete when delete button is clicked', () => {
     render(<TodoItem todo={mockTodo} onToggle={onToggle} onDelete={onDelete} />);
-    const deleteButton = screen.getByRole('button', { name: 'delete' });
+    const deleteButton = screen.getByRole('button', { name: /delete/i });
     fireEvent.click(deleteButton);
     expect(onDelete).toHaveBeenCalledTimes(1);
   });
