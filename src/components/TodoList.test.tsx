@@ -7,7 +7,7 @@ import { useTodos } from '@/hooks/useTodos';
 // Mock the useTodos hook
 jest.mock('@/hooks/useTodos');
 
-xdescribe('TodoList Component', () => {
+describe('TodoList Component', () => {
   const mockUseTodos = useTodos as jest.MockedFunction<typeof useTodos>;
   const addTodo = jest.fn();
 
