@@ -28,6 +28,11 @@ export const TodoList = () => {
           placeholder="Add a new task"
           value={newTask}
           onChange={(e) => setNewTask(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              handleAddTodo()
+            }
+          }}
           className="w-full px-4 py-2 rounded-md border border-input focus:outline-none focus:ring-1 focus:ring-primary"
         />
         <Button onClick={handleAddTodo} className="ml-4 px-4 py-2 rounded-md text-primary-foreground">
