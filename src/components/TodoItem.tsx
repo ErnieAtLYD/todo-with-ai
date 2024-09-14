@@ -15,19 +15,8 @@ export const TodoItem: React.FC<TodoItemProps> = ({
   onToggle,
   onDelete,
 }) => {
-  const priorityColors = {
-    low: "bg-green-100",
-    medium: "bg-card",
-    high: "bg-orange-100",
-    urgent: "bg-red-100",
-  };
-
   return (
-    <div
-      className={`flex items-center justify-between ${
-        priorityColors[todo.priority]
-      }`}
-    >
+    <div className="flex items-center justify-between">
       <div className="flex items-center">
         <Checkbox
           checked={todo.completed}
@@ -45,7 +34,6 @@ export const TodoItem: React.FC<TodoItemProps> = ({
         </label>
       </div>
       <div className="flex items-center gap-2">
-        <Badge variant="secondary" className="px-2 py-1 text-xs">{todo.priority}</Badge>
         <div className="text-sm text-muted-foreground">{todo.dueDate}</div>
         <Button
           variant="ghost"
