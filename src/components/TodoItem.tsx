@@ -55,6 +55,7 @@ export const TodoItem: React.FC<TodoItemProps> = ({
           <FilePenIcon className="w-4 h-4" />
         </Button>
         <Button
+          aria-label="delete"
           variant="ghost"
           size="icon"
           onClick={onDelete}

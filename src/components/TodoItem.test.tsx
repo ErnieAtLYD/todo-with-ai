@@ -36,7 +36,7 @@ describe('TodoItem Component', () => {
 
   it('calls onDelete when delete button is clicked', () => {
     render(<TodoItem todo={mockTodo} onToggle={onToggle} onDelete={onDelete} />);
-    const deleteButton = screen.getByRole('button', { name: /delete/i });
+    const deleteButton = screen.getByRole('button', { name: 'delete' });
     fireEvent.click(deleteButton);
     expect(onDelete).toHaveBeenCalledTimes(1);
   });
